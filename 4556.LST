@@ -1,0 +1,56 @@
+C51 COMPILER V9.00   4556                                                                  08/22/2018 15:32:26 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE 4556
+OBJECT MODULE PLACED IN 4556.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE 4556.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg52.h>
+   2          sbit P1_1=P1^1;
+   3          unsigned char xx;
+   4          
+   5          void delay()
+   6          {
+   7   1         unsigned int i,j;
+   8   1       for(i=0;i<300;i++)
+   9   1       {
+  10   2         for(j=0;j<120;j++)
+  11   2         {
+  12   3         }
+  13   2       }
+  14   1      }
+  15          
+  16          
+  17          void main()
+  18          {
+  19   1      
+  20   1      
+  21   1      unsigned char mm;
+  22   1      
+  23   1      while(1)
+  24   1      {
+  25   2      P1_1=0;
+  26   2      delay();
+  27   2      P1_1=1;
+  28   2      
+  29   2      delay();
+  30   2      }
+  31   1      while(1);
+  32   1      }
+*** WARNING C280 IN LINE 21 OF 4556.C: 'mm': unreferenced local variable
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     41    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      1       1
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)
